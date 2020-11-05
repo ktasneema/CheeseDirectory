@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="Style.css">
+<script type="text/javascript" src="Category.js"></script>
+<script type="text/javascript" src="MilkType.js"></script>
+</head>
+<body>
+    
+    <div>
+      <Marquee> <h1>Welcome to Cheese Factory</h1></Marquee> 
+    </div>
+   
+    
+  
+    <div class="navbar">
+         <a class="active" href="index.html"> <i class="fa fa-fw fa-home"></i>Home</a>
+        <div class="dropdown" onclick="myFunction()">
+          <button class="dropbtn" onclick="myFunction()">Cheese 
+            <i class="fa fa-caret-side"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="header">
+              <h2>Cheese</h2>
+            </div>   
+            <div class="row">
+              <div class="column">
+                <h3>By Category</h3>
+                <a href="#" id="Semi-soft Cheese">Semi-soft Cheese/Pâte demi-ferme</a>
+                <a href="#" id="Hard Cheese">Hard Cheese/Pâte dure</a>
+                <a href="#" id="Soft Cheese">Soft Cheese/Pâte molle</a>
+                <a href="#" id="Firm Cheese">Firm Cheese/Pâte ferme</a>
+                
+              </div>
+              <div class="column">
+                <h3>By MilkType</h3>
+                <a href="#" id="Cow">Cow/Vache</a>
+                <a href="#"id="Goat">Goat/Chèvre</a>
+                <a href="#" id="Ewe">Ewe/Brebis</a>
+                <a href="#" id="Buffalo">Buffalo Cow/Bufflonne</a>
+              </div>
+              <div class="column">
+                <h3>By MilkTreatment</h3>
+                <a href="#">Thermised/Thermisé</a>
+                <a href="#">Raw Milk/Lait cru</a>
+                <a href="#">Pasteurized/Pasteurisé</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <a href="#">Recipes</a>
+        <a href="#">search</a>
+        <a href="#">login</a>
+
+
+
+         </div>  
+        <div id="searchWrapper"><input type="text" name="searchBar" id="searchBar" placeholder="search for anything"></div>
+         <div id='result'></div>
+         <img src="new.jpg"; width="100%" height="500"; position:relative>
+
+</div>
+</div>
+
+        
+    <script>
+        document.getElementById('Semi-soft Cheese').addEventListener('click', loadSemi_softcheese);
+        document.getElementById('Hard Cheese').addEventListener('click', loadHardCheese);
+        document.getElementById('Soft Cheese').addEventListener('click', loadSoftCheese);
+        document.getElementById('Firm Cheese').addEventListener('click', loadFirmCheese );
+        document.getElementById('Cow').addEventListener('click', loadCow );
+        document.getElementById('Goat').addEventListener('click', loadGoat );
+        document.getElementById('Ewe').addEventListener('click', loadEwe );
+        document.getElementById('Buffalo').addEventListener('click', loadBuffalo );
+       
+
+
+    </script>
+
+
+
+</body>
+</html>
+
+
+  
+
